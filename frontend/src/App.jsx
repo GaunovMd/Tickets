@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import TicketsPage from './pages/ticketsPage/TicketsPage';
+import TicketsPage from './pages/ticketsPage/TicketsPage.jsx';
 
 function App() {
   return (

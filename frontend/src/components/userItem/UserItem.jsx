@@ -1,21 +1,13 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import styles from './userItem.module.css';
 
-const useStyles = makeStyles(theme => ({
-    item:{
-      width: '30%',
-      paddingRight: '20px',
-      display: 'flex',
-    },
-}));
 
 function UserItem(props) {
-    const classes = useStyles();
 
     const { image, reported, asset, status } = props;
 
     return (
-        <div className={classes.item}>
+        <div className={styles.item}>
             <h2>{image}</h2>
             <h2>{reported}</h2>
             <h2>{asset}</h2>

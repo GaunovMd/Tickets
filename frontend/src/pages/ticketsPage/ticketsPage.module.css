@@ -1,0 +1,20 @@
+.root {
+    width: 100vw;
+    height: 100vh;
+    background: #252525;
+}
+.header {
+    text-align: left;
+    border-bottom: 0.4rem solid #6E43D9;
+    color: #ADADAD;
+  }
+.mainHolder {
+    padding: 20px;
+}
+.contentHolder{
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
