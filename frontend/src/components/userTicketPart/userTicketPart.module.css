@@ -1,0 +1,10 @@
+.root {
+    background: #323232;
+    width: 70%;
+}
+.ticketHolder {
+    display: block;
+    background: red;
+    width: 200px;
+    margin: 0 auto;
+}
