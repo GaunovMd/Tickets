@@ -1,0 +1,13 @@
+.item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 4px solid #252525;
+    padding: 20px;
+}
+
+.ticketItem {
+    position: relative;
+    top: 50%;
+    transform: translateY(10%);
+}
