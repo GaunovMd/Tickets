@@ -24,7 +24,7 @@
     padding-top: 20px;
     display: flex;
     width: 100%;
-    height: auto;
+    height: 100%;
     justify-content: space-between;
 }
 
@@ -32,6 +32,7 @@
     width: 50%;
     padding-right: 20px;
     color: var(--main-text-color);
+    height: 100%;
 }
 
 .searchField {
@@ -41,13 +42,34 @@
     border-radius: 4px;
     outline: none;
     color: var(--main-text-color);
+    font-size: 15px;
 }
-.ticketsHolder {
+.leftTicketsHolder {
     margin-top: 20px;
     background: var(--light-grey-color);
     display: flex;
     flex-Direction: column;
+    height: 49rem;
+    overflow-y: scroll; 
 }
+
+.leftTicketsHolder::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+	background-color: var(--dark-grey-color);
+}
+
+.leftTicketsHolder::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+.leftTicketsHolder::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+	background-color: var(--dark-text-color);
+}
+
 .ticketsHeader {
     display: flex;
     justify-content: space-between;
@@ -60,16 +82,12 @@
     background: var(--light-grey-color);
     width: 100%;
     padding:20px;
-}
-
-.rightNoTicketInfo {
-    height: 700px;
+    height: 100%;
 }
 
 .ticketHolder {
     display: block;
     width: 100%;
-    height: 100%;
     margin: 0 auto;
     color: var(--main-text-color);
 }
@@ -110,10 +128,7 @@
     padding: 10px;
 }
 .ownerText{
-    height: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(30%)
+    margin: 1rem 0;
 }
 .ownerImage, .littleOwnerImage {
     background-image: url('../../assets/images/placeholder.png');
@@ -126,19 +141,19 @@
 }
 
 .littleOwnerImage {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 .ticketInfoItem {
     padding: 10px;
 }
 .noTicketPlaceholder {
-    width: 20%;
-    margin: 0 auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    height:100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .cross {
     background-image: url('../../assets/images/cross.png');
@@ -149,3 +164,4 @@
     background-size: cover;
     margin: 0 auto;
 }
+

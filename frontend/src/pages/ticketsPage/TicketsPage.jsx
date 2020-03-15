@@ -5,22 +5,25 @@ import TicketItem from '../../components/ticketItem/TicketItem';
 function TicketsPage() {
 
   const [users, setUsers] = useState([
-    {image: 'asd', reported: '12/02/21', asset:'Sign', status:'asd'},
-    {image: 'asd', reported: '12/02/21', asset:'Sign', status:'asd'},
-    {image: 'asd', reported: '12/02/21', asset:'Sign', status:'asd'}]
+    {image: 'asd', reported: '01/02/21', asset:'Switch warming', status:'com'},
+    {image: 'asd', reported: '02/02/21', asset:'Turn on the light', status:'com'},
+    {image: 'asd', reported: '03/02/21', asset:'Go out', status:'asd'},
+    {image: 'asd', reported: '04/02/21', asset:'Clean windows', status:'una'},
+    {image: 'asd', reported: '05/02/21', asset:'Wash hands', status:'asd'},
+    {image: 'asd', reported: '06/02/21', asset:'Make wishes', status:'com'},
+    {image: 'asd', reported: '07/02/21', asset:'Watch movie', status:'una'},
+    {image: 'asd', reported: '08/02/21', asset:'Shake hands', status:'una'},
+    {image: 'asd', reported: '09/02/21', asset:'Keep silent', status:'asd'},
+    {image: 'asd', reported: '10/02/21', asset:'Go for a walk', status:'asd'}]
   );
 
-  const currentTicket = 1;
+  const currentTicket = 0;
 
   const number = 'PU-OV-5';
   const date = '02/08/19 07:32';
   const name = 'Clark Kent';
   const post = 'ENGINEER';
-
-  const reported = '12/02/21';
-  const status = 'asd';
   const description = 'Ticket description';
-  const ticketName = 'Switch warming';
   const geoCode = 122;
   const latitude = 233;
   const longtitude = 222;
@@ -34,7 +37,7 @@ function TicketsPage() {
           <div className={styles.contentHolder}>
             <div className={styles.ticketsList}>
               <input className={styles.searchField} type="text"></input>
-                <div className={styles.ticketsHolder}>
+                <div className={styles.leftTicketsHolder}>
                   <div className={styles.ticketsHeader}>
                     <div>OWNER</div><div>REPORTED</div><div>ASSET</div><div>STATUS</div>
                   </div>
@@ -65,8 +68,8 @@ function TicketsPage() {
                         <span className={styles.lighten}>Details</span>
                       </div>
                       <div className={styles.ticketItemContent}>
-                        <div className={styles.ticketInfoItem}><span className={styles.darken}>Reported</span> <p/>{reported}</div>
-                        <div className={styles.ticketInfoItem}><span className={styles.darken}>Status</span><p/>{status}</div>
+                        <div className={styles.ticketInfoItem}><span className={styles.darken}>Reported</span> <p/>{users[0].reported}</div>
+                        <div className={styles.ticketInfoItem}><span className={styles.darken}>Status</span><p/>{users[0].status}</div>
                         <div className={styles.ticketInfoItem}><span className={styles.darken}>Description</span><p/>{description}</div>
                       </div>
                     </div>
@@ -75,7 +78,7 @@ function TicketsPage() {
                         <span className={styles.lighten}>Asset</span>
                       </div>
                       <div className={styles.ticketItemContent}>
-                        <div className={styles.ticketInfoItem}><span className={styles.darken}>Name</span> <p/>{ticketName}</div>
+                        <div className={styles.ticketInfoItem}><span className={styles.darken}>Name</span> <p/>{users[0].asset}</div>
                         <div className={styles.ticketInfoItem}><span className={styles.darken}>GeoCode</span><p/>{geoCode}</div>
                         <div className={styles.ticketInfoItem}><span className={styles.darken}>Location</span><p/>{latitude} {longtitude}</div>
                       </div>
@@ -85,7 +88,7 @@ function TicketsPage() {
               :
               <div className={styles.rightNoTicketInfo}>
                 <div className={styles.noTicketPlaceholder}>
-                  <div className={styles.cross}/><p/>No tickets selected</div>  
+                  <div className={styles.cross}/><div>No tickets selected</div></div>  
               </div>}
               </div>            
             </div>

@@ -1,4 +1,4 @@
-.item {
+.itemHolder {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -7,7 +7,6 @@
 }
 
 .ticketItem {
-    position: relative;
-    top: 50%;
-    transform: translateY(10%);
+    margin: 1rem 0;
+    font-size: 15px;
 }
