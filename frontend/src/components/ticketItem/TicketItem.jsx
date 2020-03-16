@@ -1,19 +1,29 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import styles from './ticketItem.module.css';
+import StatusBlock from '../statusBlock/StatusBlock';
 
 
 function UserItem(props) {
 
-    const { image, reported, asset, status } = props;
+    const { ticket, setTicketInfo } = props;
+
+    const handleCLick = (e) => {
+        e.target.className=styles.itemHolderSelected; ///выделять нужный и остальные возвращать
+        
+        setTicketInfo(ticket.ticketId);
+        props.history.push(`/tickets/${ticket.ticketId}`)
+
+    }
 
     return (
-        <div className={styles.itemHolder}>
-            <div className={styles.ownerImage}>{image}</div>
-            <h2 className={styles.ticketItem}>{reported}</h2>
-            <h2 className={styles.ticketItem}>{asset}</h2>
-            <h2 className={styles.ticketItem}>{status}</h2>
+        <div className={styles.itemHolder} onClick={(e)=>{handleCLick(e)}}>
+            <img className={styles.littleOwnerImage} src={ticket.owner.avatar} />
+            <h2 className={styles.ticketItem}>{ticket.reportedTime}</h2>
+            <h2 className={styles.ticketItem}>{ticket.asset.name}</h2>
+            <StatusBlock status={ticket.status==='completed' ? 'COM' : ticket.status==='assigned' ? 'ASD' : 'UNA'}/>
         </div>
     );
 }
 
-export default UserItem;
+export default withRouter(UserItem);

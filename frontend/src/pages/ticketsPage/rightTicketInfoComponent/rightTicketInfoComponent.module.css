@@ -1,0 +1,82 @@
+.ticketHolder {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    color: var(--main-text-color);
+}
+
+.rightTicketInfo, .rightNoTicketInfo {
+    background: var(--light-grey-color);
+    width: 100%;
+    padding:20px;
+    height: 100%;
+}
+
+.ticketPartHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.darken {
+    color: var(--dark-text-color);
+}
+
+.lighten{
+    color: var(--white-text-color);
+}
+
+.ticketItem {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.ticketItemHeader {
+    background: var(--dark-grey-color);
+    text-align: left;
+    padding:10px;
+    padding-left: 20px;
+}
+
+.ticketItemContent {
+    text-align: left;
+    border: 4px solid var(--dark-grey-color);
+}
+
+.ticketInfoItem {
+    padding: 10px;
+    text-transform:capitalize;
+}
+
+.owner{
+    display: flex;
+    justify-content: space-between;
+    width:max-content;
+    padding: 10px;
+}
+
+.ownerText{
+    margin: 1rem 0 0 2rem;
+}
+.ownerImage {
+    height:80px;
+    width:80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+
+.noTicketPlaceholder {
+    height:100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location {
+    border: 2px solid var(--dark-grey-color);
+    padding: 4px;
+}

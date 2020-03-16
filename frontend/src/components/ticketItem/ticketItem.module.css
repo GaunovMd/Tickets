@@ -1,12 +1,26 @@
-.itemHolder {
+.itemHolder, .itemHolderSelected {
     width: 100%;
     display: flex;
     justify-content: space-between;
     border-top: 4px solid #252525;
     padding: 20px;
+    cursor: pointer;
+}
+
+.itemHolderSelected{
+    border-left: 6px chocolate solid;
 }
 
 .ticketItem {
     margin: 1rem 0;
     font-size: 15px;
+}
+
+.littleOwnerImage {
+    height:60px;
+    width:60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
 }

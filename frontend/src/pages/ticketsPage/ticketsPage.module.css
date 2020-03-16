@@ -28,61 +28,17 @@
     justify-content: space-between;
 }
 
-.ticketsList{
-    width: 50%;
-    padding-right: 20px;
-    color: var(--main-text-color);
-    height: 100%;
-}
-
-.searchField {
-    width: 100%;
-    background: var(--background-color);
-    border: 4px solid var(--light-grey-color); 
-    border-radius: 4px;
-    outline: none;
-    color: var(--main-text-color);
-    font-size: 15px;
-}
-.leftTicketsHolder {
-    margin-top: 20px;
-    background: var(--light-grey-color);
-    display: flex;
-    flex-Direction: column;
-    height: 49rem;
-    overflow-y: scroll; 
-}
-
-.leftTicketsHolder::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-	background-color: var(--dark-grey-color);
-}
-
-.leftTicketsHolder::-webkit-scrollbar
-{
-	width: 12px;
-}
-
-.leftTicketsHolder::-webkit-scrollbar-thumb
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
-	background-color: var(--dark-text-color);
-}
-
-.ticketsHeader {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+.darken {
     color: var(--dark-text-color);
 }
 
+.lighten{
+    color: var(--white-text-color);
+}
 
-.rightTicketInfo, .rightNoTicketInfo {
-    background: var(--light-grey-color);
-    width: 100%;
-    padding:20px;
-    height: 100%;
+.littleOwnerImage {
+    width: 60px;
+    height: 60px;
 }
 
 .ticketHolder {
@@ -92,76 +48,12 @@
     color: var(--main-text-color);
 }
 
-.ticketPartHeader {
-    display: flex;
-    justify-content: space-between;
-}
-
-.darken {
-    color: var(--dark-text-color);
-}
-
-.lighten{
-    color: var(--white-text-color);
-}
-
-.ticketItem {
-    margin-top: 20px;
+.rightTicketInfo, .rightNoTicketInfo {
+    background: var(--light-grey-color);
     width: 100%;
+    padding:20px;
+    height: 100%;
 }
 
-.ticketItemHeader {
-    background: var(--dark-grey-color);
-    text-align: left;
-    padding:10px;
-    padding-left: 20px;
-}
 
-.ticketItemContent {
-    text-align: left;
-    border: 4px solid var(--dark-grey-color);
-}
-.owner{
-    display: flex;
-    justify-content: space-between;
-    width:200px;
-    padding: 10px;
-}
-.ownerText{
-    margin: 1rem 0;
-}
-.ownerImage, .littleOwnerImage {
-    background-image: url('../../assets/images/placeholder.png');
-    height:80px;
-    width:80px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50px;
-}
-
-.littleOwnerImage {
-    width: 60px;
-    height: 60px;
-}
-
-.ticketInfoItem {
-    padding: 10px;
-}
-.noTicketPlaceholder {
-    height:100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.cross {
-    background-image: url('../../assets/images/cross.png');
-    height:30px;
-    width:30px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-}
 

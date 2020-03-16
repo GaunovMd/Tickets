@@ -1,0 +1,16 @@
+.statusItemUna, .statusItemAsd, .statusItemCom {
+    width:80px;
+    background-color: #2C2C2C;
+    border: solid 4px #252525;
+    border-radius: 10px;
+    height: 50px;
+    line-height: 40px;
+    color: #5E5E5E;
+}
+
+.statusItemAsd {
+    color: #D7BE7B;
+}
+.statusItemCom {
+    color: #178A53;
+}
