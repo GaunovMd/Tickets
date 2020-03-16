@@ -9,15 +9,14 @@ function UserItem(props) {
     const { ticket, setTicketInfo } = props;
 
     const handleCLick = (e) => {
-        e.target.className=styles.itemHolderSelected; ///выделять нужный и остальные возвращать
-        
+                
         setTicketInfo(ticket.ticketId);
         props.history.push(`/tickets/${ticket.ticketId}`)
 
     }
 
     return (
-        <div className={styles.itemHolder} onClick={(e)=>{handleCLick(e)}}>
+        <div className={ticket.current ? styles.itemHolderSelected : styles.itemHolder} onClick={(e)=>{handleCLick(e)}}>
             <img className={styles.littleOwnerImage} src={ticket.owner.avatar} />
             <h2 className={styles.ticketItem}>{ticket.reportedTime}</h2>
             <h2 className={styles.ticketItem}>{ticket.asset.name}</h2>

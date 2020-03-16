@@ -28,7 +28,13 @@ function TicketsPage() {
   
 
   const setTicketInfo = (id) =>{
-    setCurrentTicket(tickets.find(ticket=>ticket.ticketId===id));
+    const curTicket = tickets.find(ticket=>ticket.ticketId===id);
+    const otherTickets = tickets.filter(ticket=>ticket.ticketId!==id);
+    curTicket.current = true;
+    otherTickets.map(item=>{item.current=false});
+    console.log(otherTickets);
+
+    setCurrentTicket(curTicket);
   }
 
   return (

@@ -7,10 +7,6 @@
     cursor: pointer;
 }
 
-.itemHolderSelected{
-    border-left: 6px chocolate solid;
-}
-
 .ticketItem {
     margin: 1rem 0;
     font-size: 15px;
@@ -23,4 +19,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50px;
+}
+
+
+.itemHolderSelected{
+    border-left: 4px #6E43D9 solid;
+    background-color: #2C2C2C;
 }

@@ -6,7 +6,7 @@ import TicketItem from '../../../components/ticketItem/TicketItem';
 
 function LeftTicketsComponent(props) {
 
-    const { tickets, setTicketInfo, itm } = props;
+    const { tickets, setTicketInfo } = props;
 
     const [filter, setFilter] = useState('');
 
@@ -15,12 +15,6 @@ function LeftTicketsComponent(props) {
     const handleChange = (e) =>{
         setFilter(e.target.value);
     }
-
-    
-
-    
-
-    console.log(filter);
 
     return (
         <div className={styles.ticketsList}>
