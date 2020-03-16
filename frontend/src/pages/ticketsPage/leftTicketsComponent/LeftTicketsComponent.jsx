@@ -28,7 +28,6 @@ function LeftTicketsComponent(props) {
                         tickets.length ? tickets.map((item) => {
                             if(filter!==''){
                                 const itemText = `${item.number+item.reportedTime+item.asset.name+item.status}`.toLowerCase();
-                                console.log(itemText)
                                 if(itemText.includes(filter.toLowerCase())){
                                     return <TicketItem setTicketInfo={setTicketInfo} ticket={item} key={item.ticketId} />
                                 }

@@ -32,7 +32,6 @@ function TicketsPage() {
     const otherTickets = tickets.filter(ticket=>ticket.ticketId!==id);
     curTicket.current = true;
     otherTickets.map(item=>{item.current=false});
-    console.log(otherTickets);
 
     setCurrentTicket(curTicket);
   }
