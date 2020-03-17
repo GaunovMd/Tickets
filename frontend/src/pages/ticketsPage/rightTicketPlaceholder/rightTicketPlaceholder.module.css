@@ -1,0 +1,24 @@
+.noTicketPlaceholder {
+    height:100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rightNoTicketInfo {
+    background: var(--light-grey-color);
+    width: 100%;
+    padding:20px;
+    height: 100%;
+}
+
+.cross {
+    background-image: url('../../../assets/images/cross.png');
+    height:30px;
+    width:30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
